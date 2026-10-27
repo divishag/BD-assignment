@@ -12,7 +12,7 @@ from kafka.errors import KafkaError
 # CONFIGURATION
 # --------------------------------------------------
 
-BOOTSTRAP_SERVERS = ["172.25.244.150:9092"]
+BOOTSTRAP_SERVERS = ["172.25.124.60:9092"]
 TOPIC = "orders"
 EXPECTED_RECORDS = 62
 

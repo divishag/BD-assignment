@@ -4,7 +4,7 @@ from kafka import KafkaProducer
 
 INPUT_FILE = Path.home() / "food-ordering" / "order_metrics.jsonl"
 TOPIC = "order_metrics"
-BOOTSTRAP_SERVERS = ["172.25.244.150:9092"]
+BOOTSTRAP_SERVERS = ["172.25.124.60:9092"]
 
 producer = KafkaProducer(
     bootstrap_servers=BOOTSTRAP_SERVERS,
