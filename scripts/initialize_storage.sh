@@ -2,7 +2,7 @@
 set -euo pipefail
 # ONLY for a newly created, empty broker data directory. Never use for old Kafka data.
 KAFKA_HOME="${KAFKA_HOME:-/opt/kafka}"
-CONFIG="${CONFIG:-$HOME/distributed-food-ordering/kafka/server.properties}"
+CONFIG="${CONFIG:-$HOME/team42-fresh/kafka/server.properties}"
 CLUSTER_ID="${CLUSTER_ID:?Set CLUSTER_ID to a NEW shared cluster ID for a FRESH cluster}"
 DIR="$(sed -n 's/^log.dirs=//p' "$CONFIG")"
 [[ -n "$DIR" && "$DIR" == "$HOME"/* ]] || { echo 'Refusing unsafe data path' >&2; exit 1; }
